@@ -71,6 +71,7 @@ wd
 
 
 #----------------------------------------------------------------------
+#Conducting experiments to answer test questions
 #question 1: maximum age (before omiting NA)
 max(data$age)
 
