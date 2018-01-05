@@ -13,17 +13,17 @@ p1: array [1..32] of integer;
 p2: array [1..32] of integer;
 p3: array [1..32] of integer;
 begin
-assign(h, 'Êîíå÷íûé òåêñò.txt');
+assign(h, 'ÃŠÃ®Ã­Ã¥Ã·Ã­Ã»Ã© Ã²Ã¥ÃªÃ±Ã².txt');
 rewrite(h);
 
-writeln('Ââåñòè ğàñïàéêó êîëåñ ñ êëàâèàòóğû? (Ä/Í)');
+writeln('Enter wiring from keyboard? (Y/N)');
 readln(b);
 
 
-if b='Ä' then
+if b='Ã„' then
 begin
 writeln;
-writeln('Ğàñïàéêà êîëåñà 1: ');
+writeln('ÃÃ Ã±Ã¯Ã Ã©ÃªÃ  ÃªÃ®Ã«Ã¥Ã±Ã  1: ');
 readln(s);
 for i:= 1 to 32 do begin
 a:=word(s[i]);
@@ -31,7 +31,7 @@ r1[i]:=a;
 end;
 
 writeln;
-writeln('Ğàñïàéêà êîëåñà 2: ');
+writeln('ÃÃ Ã±Ã¯Ã Ã©ÃªÃ  ÃªÃ®Ã«Ã¥Ã±Ã  2: ');
 readln(s);
 for i:= 1 to 32 do begin
 a:=word(s[i]);
@@ -39,7 +39,7 @@ r2[i]:=a;
 end;
 
 writeln;
-writeln('Ğàñïàéêà êîëåñà 3: ');
+writeln('ÃÃ Ã±Ã¯Ã Ã©ÃªÃ  ÃªÃ®Ã«Ã¥Ã±Ã  3: ');
 readln(s);
 for i:= 1 to 32 do begin
 a:=word(s[i]);
@@ -47,17 +47,17 @@ r3[i]:=a;
 end;
 
 writeln;
-Writeln('Óñëîâíîå ğàñïîëîæåíèå âûåìîê: ');
+Writeln('Ã“Ã±Ã«Ã®Ã¢Ã­Ã®Ã¥ Ã°Ã Ã±Ã¯Ã®Ã«Ã®Ã¦Ã¥Ã­Ã¨Ã¥ Ã¢Ã»Ã¥Ã¬Ã®Ãª: ');
 readln(e);
 readln(t);
 
 end;
 
-if b='Í' then
+if b='Ã' then
 begin
-assign(x, 'Êëş÷ øèôğîâêè.txt');
+assign(x, 'ÃŠÃ«Ã¾Ã· Ã¸Ã¨Ã´Ã°Ã®Ã¢ÃªÃ¨.txt');
 rewrite(x);
-writeln(x,'Ğàñïàéêà êîëåñà 1: ');
+writeln(x,'ÃÃ Ã±Ã¯Ã Ã©ÃªÃ  ÃªÃ®Ã«Ã¥Ã±Ã  1: ');
 r1[1]:=random(32)+1072;
   For l:=2 to 32 do
          begin
@@ -74,7 +74,7 @@ r1[1]:=random(32)+1072;
 
 writeln(x);
 writeln(x);
-writeln(x,'Ğàñïàéêà êîëåñà 2: ');
+writeln(x,'ÃÃ Ã±Ã¯Ã Ã©ÃªÃ  ÃªÃ®Ã«Ã¥Ã±Ã  2: ');
 r2[1]:=random(32)+1072;
   For l:=2 to 32 do
          begin
@@ -91,7 +91,7 @@ r2[1]:=random(32)+1072;
  
 writeln(x);
 writeln(x);
-writeln(x,'Ğàñïàéêà êîëåñà 3: ');
+writeln(x,'ÃÃ Ã±Ã¯Ã Ã©ÃªÃ  ÃªÃ®Ã«Ã¥Ã±Ã  3: ');
 r3[1]:=random(32)+1072;
   For l:=2 to 32 do
          begin
@@ -112,14 +112,14 @@ writeln(x);
 Randomize;
 e:=random(32);
 t:=random(32);
-Writeln(x,'Óñëîâíîå ğàñïîëîæåíèå âûåìîê: ',e,' ',t);
+Writeln(x,'Ã“Ã±Ã«Ã®Ã¢Ã­Ã®Ã¥ Ã°Ã Ã±Ã¯Ã®Ã«Ã®Ã¦Ã¥Ã­Ã¨Ã¥ Ã¢Ã»Ã¥Ã¬Ã®Ãª: ',e,' ',t);
 
 close(x);
 end;
 
 
 writeln;
-writeln('Ââåäèòå ïîëîæåíèå êîëåñà 1: ');
+writeln('Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¯Ã®Ã«Ã®Ã¦Ã¥Ã­Ã¨Ã¥ ÃªÃ®Ã«Ã¥Ã±Ã  1: ');
 readln(k1);
 while not(c=word(k1[1])-1072) do begin
  a:=r1[32];
@@ -134,7 +134,7 @@ end;
 
 
 writeln;
-writeln('Ââåäèòå ïîëîæåíèå êîëåñà 2: ');
+writeln('Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¯Ã®Ã«Ã®Ã¦Ã¥Ã­Ã¨Ã¥ ÃªÃ®Ã«Ã¥Ã±Ã  2: ');
 readln(k2);
 while not(c=word(k2[1])-1072) do begin
  a:=r2[32];
@@ -148,7 +148,7 @@ end;
 
 
 writeln;
-writeln('Ââåäèòå ïîëîæåíèå êîëåñà 3: ');
+writeln('Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¯Ã®Ã«Ã®Ã¦Ã¥Ã­Ã¨Ã¥ ÃªÃ®Ã«Ã¥Ã±Ã  3: ');
 readln(k3);
 while not(c=word(k3[1])-1072) do begin
  a:=r3[32];
@@ -163,14 +163,14 @@ end;
 
 
 writeln;
-writeln('Ñîõğàíÿòü èñõîäíîå ôîğìàòèğîâàíèå? (Ä/Í) ');
+writeln('Ã‘Ã®ÃµÃ°Ã Ã­Ã¿Ã²Ã¼ Ã¨Ã±ÃµÃ®Ã¤Ã­Ã®Ã¥ Ã´Ã®Ã°Ã¬Ã Ã²Ã¨Ã°Ã®Ã¢Ã Ã­Ã¨Ã¥? (Ã„/Ã) ');
 readln(b);
 
 writeln;
-writeln('Ââåäèòå ÷èñëî');
+writeln('Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã®');
 readln(bl);
 
-assign(f, 'Èñõîäíûé òåêñò.txt');
+assign(f, 'ÃˆÃ±ÃµÃ®Ã¤Ã­Ã»Ã© Ã²Ã¥ÃªÃ±Ã².txt');
 reset(f);
   while not eof(f) do
   begin
@@ -289,7 +289,7 @@ write(h,char(a));
 
 end;
 
-if (not(((a>1039) and (a<1072)) or (a=1025) or ((a>1071) and (a<1104)) or (a=1105))) and (b='Ä') then
+if (not(((a>1039) and (a<1072)) or (a=1025) or ((a>1071) and (a<1104)) or (a=1105))) and (b='Ã„') then
 write(h,char(a));
     end;
     writeln(h);
