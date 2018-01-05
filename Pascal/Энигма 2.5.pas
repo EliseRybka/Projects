@@ -1,4 +1,4 @@
-program ss;
+program enigma;
 var
 f,h,x : text;
 k1,k2,k3, b, s : string;
