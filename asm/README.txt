@@ -1,1 +1,1 @@
-Program that counts amounts of prime numbers drom 1 to n(from keyboard)
+Program that counts amount of prime numbers drom 1 to n(from keyboard)
