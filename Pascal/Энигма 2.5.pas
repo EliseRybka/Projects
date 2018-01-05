@@ -13,17 +13,17 @@ p1: array [1..32] of integer;
 p2: array [1..32] of integer;
 p3: array [1..32] of integer;
 begin
-assign(h, 'Êîíå÷íûé òåêñò.txt');
+assign(h, 'Coded text.txt');
 rewrite(h);
 
 writeln('Enter wiring from keyboard? (Y/N)');
 readln(b);
 
 
-if b='Ä' then
+if b='Y' then
 begin
 writeln;
-writeln('Ðàñïàéêà êîëåñà 1: ');
+writeln('Wiring of rotor 1: ');
 readln(s);
 for i:= 1 to 32 do begin
 a:=word(s[i]);
@@ -31,7 +31,7 @@ r1[i]:=a;
 end;
 
 writeln;
-writeln('Ðàñïàéêà êîëåñà 2: ');
+writeln('Wiring of rotor 2: ');
 readln(s);
 for i:= 1 to 32 do begin
 a:=word(s[i]);
@@ -39,7 +39,7 @@ r2[i]:=a;
 end;
 
 writeln;
-writeln('Ðàñïàéêà êîëåñà 3: ');
+writeln('Wiring of rotor 3: ');
 readln(s);
 for i:= 1 to 32 do begin
 a:=word(s[i]);
@@ -47,17 +47,17 @@ r3[i]:=a;
 end;
 
 writeln;
-Writeln('Óñëîâíîå ðàñïîëîæåíèå âûåìîê: ');
+Writeln('Location of the notches: ');
 readln(e);
 readln(t);
 
 end;
 
-if b='Í' then
+if b='N' then
 begin
-assign(x, 'Êëþ÷ øèôðîâêè.txt');
+assign(x, 'Encryption key.txt');
 rewrite(x);
-writeln(x,'Ðàñïàéêà êîëåñà 1: ');
+writeln(x,'Wiring of rotor 1: ');
 r1[1]:=random(32)+1072;
   For l:=2 to 32 do
          begin
@@ -74,7 +74,7 @@ r1[1]:=random(32)+1072;
 
 writeln(x);
 writeln(x);
-writeln(x,'Ðàñïàéêà êîëåñà 2: ');
+writeln(x,'Wiring of rotor 2: ');
 r2[1]:=random(32)+1072;
   For l:=2 to 32 do
          begin
@@ -91,7 +91,7 @@ r2[1]:=random(32)+1072;
  
 writeln(x);
 writeln(x);
-writeln(x,'Ðàñïàéêà êîëåñà 3: ');
+writeln(x,'Wiring of rotor 3: ');
 r3[1]:=random(32)+1072;
   For l:=2 to 32 do
          begin
@@ -112,14 +112,14 @@ writeln(x);
 Randomize;
 e:=random(32);
 t:=random(32);
-Writeln(x,'Óñëîâíîå ðàñïîëîæåíèå âûåìîê: ',e,' ',t);
+Writeln(x,'Location of the notches: ',e,' ',t);
 
 close(x);
 end;
 
 
 writeln;
-writeln('Ââåäèòå ïîëîæåíèå êîëåñà 1: ');
+writeln('Enter position of rotor 1: ');
 readln(k1);
 while not(c=word(k1[1])-1072) do begin
  a:=r1[32];
@@ -134,7 +134,7 @@ end;
 
 
 writeln;
-writeln('Ââåäèòå ïîëîæåíèå êîëåñà 2: ');
+writeln('Enter position of rotor 2: ');
 readln(k2);
 while not(c=word(k2[1])-1072) do begin
  a:=r2[32];
@@ -148,7 +148,7 @@ end;
 
 
 writeln;
-writeln('Ââåäèòå ïîëîæåíèå êîëåñà 3: ');
+writeln('Enter position of rotor 3: ');
 readln(k3);
 while not(c=word(k3[1])-1072) do begin
  a:=r3[32];
@@ -163,14 +163,14 @@ end;
 
 
 writeln;
-writeln('Ñîõðàíÿòü èñõîäíîå ôîðìàòèðîâàíèå? (Ä/Í) ');
+writeln('Keep source formatting? (Y/N)');
 readln(b);
 
 writeln;
-writeln('Ââåäèòå ÷èñëî');
+writeln('Enter number');
 readln(bl);
 
-assign(f, 'Èñõîäíûé òåêñò.txt');
+assign(f, 'Source text.txt');
 reset(f);
   while not eof(f) do
   begin
