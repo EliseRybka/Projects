@@ -1,6 +1,6 @@
 # Previous Projects
 
-SOME projects conducted by me at Univercity
+SOME of my projects from the Univercity
 
 
 Feel free to contuct me for any further information
