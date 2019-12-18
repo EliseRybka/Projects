@@ -1,6 +1,6 @@
 # Previous Projects
 
-SOME of my projects from the Univercity
+SOME of the projects from BSc at MIPT.
 
 
-Feel free to contuct me for any further information
+Feel free to contact me for any further information.
